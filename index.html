@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notícias de economia, tecnologia e esportes em um site acessível.">
+    <title>Jornal Web — Notícias de Hoje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+    <header id="inicio" class="cabecalho-site">
+        <div class="limite cabecalho-conteudo">
+            <div class="identidade">
+                <h1 class="marca">Jornal Web</h1>
+                <p class="slogan">As principais notícias do dia, em um só lugar.</p>
+            </div>
+            <div class="acessibilidade" role="group" aria-label="Controles de acessibilidade">
+                <button id="diminuir-fonte" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+                <button id="aumentar-fonte" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+                <button id="alternar-contraste" type="button" aria-pressed="false">Alto contraste</button>
+                <span id="status-acessibilidade" class="sr-only" aria-live="polite"></span>
+            </div>
+        </div>
+    </header>
+    <nav class="navegacao" aria-label="Navegação principal">
+        <ul class="limite links-navegacao">
+            <li><a href="#inicio" aria-current="page">Início</a></li>
+            <li><a href="#economia">Economia</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#esportes">Esportes</a></li>
+            <li><a href="#rodape">Sobre o jornal</a></li>
+        </ul>
+    </nav>
+    <main id="conteudo" class="limite conteudo-principal">
+        <section class="introducao" aria-labelledby="titulo-noticias">
+            <h2 id="titulo-noticias">Notícias de hoje</h2>
+            <p>Leia as principais notícias e use os controles para adaptar a página às suas necessidades.</p>
+        </section>
+        <article id="economia" class="noticia">
+            <header class="noticia-cabecalho">
+                <h2 class="noticia-titulo">Economia brasileira mostra sinais de recuperação</h2>
+                <p class="noticia-data"><time datetime="2025-10-09">Publicado em 09/10/2025</time></p>
+            </header>
+            <div class="noticia-conteudo">
+                <img src="https://cdls.org.br/wp-content/uploads/cdlce_base/2021/08/265919-redator-entregar-ate-2812-as-10heconomia-mundial-quais-sao-as-10-tendencias-para-os-proximos-anos.jpg" alt="Imagem ilustrativa sobre economia mundial">
+                <div class="noticia-texto">
+                    <p>A economia brasileira começa a mostrar sinais de recuperação. O aumento das exportações de morango do amor, cultivado em regiões como São Paulo e Minas Gerais, movimentou o setor agrícola e gerou novas oportunidades de trabalho.</p>
+                    <p>A demanda internacional pela fruta ajudou as contas externas e levou analistas a estimar crescimento de 0,5% no último trimestre. O setor agrícola segue entre os pilares da retomada econômica.</p>
+                </div>
+            </div>
+        </article>
+        <article id="tecnologia" class="noticia">
+            <header class="noticia-cabecalho">
+                <h2 class="noticia-titulo">Tecnologia: avanços em Inteligência Artificial</h2>
+                <p class="noticia-data"><time datetime="2025-10-09">Publicado em 09/10/2025</time></p>
+            </header>
+            <div class="noticia-conteudo">
+                <img src="https://br24.io/wp-content/uploads/2023/01/chatgpt.png" alt="Ilustração relacionada à inteligência artificial">
+                <div class="noticia-texto">
+                    <p>Os avanços em inteligência artificial ampliaram a capacidade de interpretar informações e produzir respostas para tarefas complexas. Sistemas também passaram a interagir entre si em atividades acadêmicas.</p>
+                    <p>Especialistas em ética e educação discutem como lidar com esse cenário e garantir que novas ferramentas apoiem a aprendizagem humana.</p>
+                </div>
+            </div>
+        </article>
+        <article id="esportes" class="noticia">
+            <header class="noticia-cabecalho">
+                <h2 class="noticia-titulo">Esportes: seleção vence semifinal por 2 a 1</h2>
+                <p class="noticia-data"><time datetime="2025-10-09">Publicado em 09/10/2025</time></p>
+            </header>
+            <div class="noticia-conteudo">
+                <img src="https://imagens.ebc.com.br/CXt8Xye-cHBQxiTettb2b0unX6M=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/selecao_brasileira_2022_pre_mundial.jpg?itok=_Hbw8MBs" alt="Jogadores da seleção brasileira de futebol em campo">
+                <div class="noticia-texto">
+                    <p>Em uma semifinal disputada, a equipe brasileira venceu o Vasco por 2 a 1 e garantiu lugar na final da competição. O jogo teve gols de Gabigol e Neymar e foi marcado por reviravoltas.</p>
+                    <p>Agora, os torcedores aguardam a decisão contra o Água Santa, em uma partida que promete muita emoção na disputa pela vaga na Série A.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer id="rodape" class="rodape">
+        <div class="limite rodape-conteudo">
+            <p>© 2025 Jornal Web — Todos os direitos reservados.</p>
+            <a href="#inicio">Voltar ao início</a>
+        </div>
+    </footer>
+</body>
+</html>
